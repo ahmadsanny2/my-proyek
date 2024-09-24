@@ -1,0 +1,129 @@
+:root {
+  --primary: #0d6efd;
+  --secondary: white;
+  --tree: rgba(225, 225, 225, 0.785);
+  --four: #212529;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+/* Navbar Start */
+.navbar {
+  z-index: 9999;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+  height: 100vh;
+}
+
+.c-hero {
+  margin-top: 135px;
+}
+
+
+.button-hero {
+  color: var(--secondary);
+  background-color: var(--four);
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 13px;
+  transition: all .5s ease-in-out;
+}
+
+.button-hero:hover {
+  background-color: var(--secondary);
+  color: var(--four);
+}
+
+.hero-image {
+  margin-left: 50px;
+  width: 400px;
+}
+
+/* Hero End */
+
+/* Article Start */
+
+.header-article {
+  margin: 0;
+}
+
+/* Article End */
+
+/* Feature Start */
+.feature {
+  height: 700px;
+}
+
+/* Feature End */
+
+/* Service Start */
+.service {
+  height: 700px;
+}
+
+/* Service End */
+
+/* FAQ Start */
+.faq {
+  height: 700px;
+}
+
+/* FAQ End */
+
+/* Footer Start */
+.b-footer {
+  color: var(--four);
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+.b-footer:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.p-footer {
+  margin: 0;
+  color: rgb(189, 182, 169);
+}
+
+/* Footer End */
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  /* Hero Start */
+  .c-hero {
+    margin-top: 50px;
+  }
+
+  .hero-image {
+    width: 300px;
+  }
+
+  /* Hero End */
+
+  /* Article Start */
+  .card-article {}
+
+  /* Article End */
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {}
