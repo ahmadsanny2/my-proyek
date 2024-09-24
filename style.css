@@ -104,6 +104,34 @@ body {
 
 /* Footer End */
 
+@media screen and (max-width: 768px) {
+  /* Navbar Start */
+  /* Navbar End */
+
+  /* Hero Start */
+  .c-hero {
+    margin-top: 50px;
+  }
+
+  .hero-image {
+    width: 20em;
+  }
+
+  /* Hero End */
+
+  /* Article Start */
+  /* Article End */
+
+  /* Feature Start */
+  /* Feature End */
+
+  /* Service Start */
+  /* Service End */
+
+  /* FAQ Start */
+  /* FAQ End */
+}
+
 @media screen and (max-width: 576px) {
   body {
     background-color: aquamarine;
