@@ -105,6 +105,9 @@ body {
 /* Footer End */
 
 @media screen and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
   
   /* Navbar Start */
   /* Navbar End */
@@ -115,7 +118,7 @@ body {
   }
 
   .hero-image {
-    width: 20em;
+    
   }
 
   /* Hero End */
@@ -134,6 +137,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    background-color: red;
+  }
 
   /* Hero Start */
   .c-hero {
@@ -141,7 +147,7 @@ body {
   }
 
   .hero-image {
-    width: 70%;
+    
   }
 
   /* Hero End */
