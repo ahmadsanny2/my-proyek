@@ -54,10 +54,18 @@ body {
 /* Hero End */
 
 /* Article Start */
-
 .header-article {
   margin: 0;
 }
+
+.card-article {
+  padding: 10px;
+}
+
+.article-image {
+  width: 100%;
+}
+
 
 /* Article End */
 
@@ -103,12 +111,46 @@ body {
 }
 
 /* Footer End */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #fd0ded;
+  }
+
+  /* Navbar Start */
+  /* Navbar End */
+
+  /* Hero Start */
+  .c-hero {
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    width: 350px;
+  }
+
+  /* Hero End */
+
+  /* Article Start */
+  /* Article End */
+
+  /* Feature Start */
+  /* Feature End */
+
+  /* Service Start */
+  /* Service End */
+
+  /* FAQ Start */
+  /* FAQ End */
+
+  /* Footer Start */
+  /* Footer End */
+}
 
 @media screen and (max-width: 768px) {
   body {
     background-color: green;
   }
-  
+
   /* Navbar Start */
   /* Navbar End */
 
@@ -118,12 +160,16 @@ body {
   }
 
   .hero-image {
-    
+    width: 340px;
   }
 
   /* Hero End */
 
   /* Article Start */
+  .card-article {
+    width: 62%;
+  }
+
   /* Article End */
 
   /* Feature Start */
@@ -143,7 +189,7 @@ body {
 
   /* Hero Start */
   .c-hero {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .hero-image {
@@ -158,4 +204,39 @@ body {
   /* Article End */
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  body {
+    background-color: #0dfd79;
+  }
+
+  /* Navbar Start */
+  /* Navbar End */
+
+  /* Hero Start */
+  .header-title {
+    font-size: 10px;
+  }
+
+  .hero-image {
+    width: 250px;
+  }
+
+  /* Hero End */
+}
+
+/* Article Start */
+.card-article {}
+
+/* Article End */
+
+/* Feature Start */
+/* Feature End */
+
+/* Service Start */
+/* Service End */
+
+/* FAQ Start */
+/* FAQ End */
+
+/* Footer Start */
+/* Footer End */
