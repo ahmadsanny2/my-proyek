@@ -166,9 +166,6 @@ body {
   /* Hero End */
 
   /* Article Start */
-  .card-article {
-    width: 62%;
-  }
 
   /* Article End */
 
@@ -181,6 +178,9 @@ body {
   /* FAQ Start */
   /* FAQ End */
 }
+
+/* Footer Start */
+/* Footer End */
 
 @media screen and (max-width: 576px) {
   body {
