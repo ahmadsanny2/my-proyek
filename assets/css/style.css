@@ -54,12 +54,20 @@ body {
 /* Hero End */
 
 /* Article Start */
+.article {
+  
+}
+
 .header-article {
   margin: 0;
 }
 
+.card-article {
+  
+}
+
 .article-image {
-  width: 100%;
+  
 }
 
 
@@ -67,21 +75,21 @@ body {
 
 /* Feature Start */
 .feature {
-  height: 700px;
+  height: 100vh;
 }
 
 /* Feature End */
 
 /* Service Start */
 .service {
-  height: 700px;
+  height: 100vh;
 }
 
 /* Service End */
 
 /* FAQ Start */
 .faq {
-  height: 500px;
+  height: 100vh;
 }
 
 /* FAQ End */
@@ -107,7 +115,7 @@ body {
 }
 
 /* Footer End */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   body {
     background-color: #fd0ded;
   }
@@ -142,7 +150,7 @@ body {
   /* Footer End */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   body {
     background-color: green;
   }
@@ -178,7 +186,7 @@ body {
 /* Footer Start */
 /* Footer End */
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 421px) and (max-width: 576px) {
   body {
     background-color: red;
   }
@@ -221,7 +229,9 @@ body {
 }
 
 /* Article Start */
-.card-article {}
+.card-article {
+  
+}
 
 /* Article End */
 
