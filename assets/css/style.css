@@ -70,26 +70,30 @@ body {
   
 }
 
+.h3-article {
+  margin: 0;
+}
+
+.p-article {
+  margin: 0;
+}
+
 
 /* Article End */
 
 /* Feature Start */
-.feature {
-  height: 100vh;
+.modal {
 }
-
 /* Feature End */
 
 /* Service Start */
 .service {
-  height: 100vh;
 }
 
 /* Service End */
 
 /* FAQ Start */
 .faq {
-  height: 100vh;
 }
 
 /* FAQ End */

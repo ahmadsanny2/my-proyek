@@ -83,8 +83,7 @@
                 </div>
                 <div
                     class="c-img col-12 col-lg-5 align-content-center order-1 order-lg-2 justify-content-center text-center">
-                    <img src="assets/image/hero.png" alt=""
-                        class="hero-image text-center m-0">
+                    <img src="assets/image/hero.png" alt="" class="hero-image text-center m-0">
                 </div>
             </div>
         </div>
@@ -109,8 +108,7 @@
                     <a href="article2.html" class="btn btn-primary">LEARN MORE</a>
                 </div>
                 <div class="card-article bg-light col-12 col-lg-3 rounded py-3 align-content-center" data-aos="fade-up">
-                    <img src="assets/image/3.jpg" alt=""
-                        class="article-image mt-2 rounded ratio ratio-16x9">
+                    <img src="assets/image/3.jpg" alt="" class="article-image mt-2 rounded ratio ratio-16x9">
                     <h5 class="">Seeking professional help for mental health problems</h5>
                     <br>
                     <br>
@@ -126,26 +124,61 @@
         <div class="c-feature container-fluid">
             <h3 class="text-center text-light">Feature</h3>
             <div class="row justify-content-center gap-3 mt-4">
-                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light" data-aos="fade-up">
+                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light py-5"
+                    data-aos="fade-up">
                     <span class="material-symbols-outlined mt-3 fs-1">
                         video_camera_front
                     </span>
                     <h5 class="text-center">Online Consultation</h5>
                     <p>Easy access to mental health experts through our safe and convenient platform.</p>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#featureModal"
+                        data-feature="consultation">Learn More</button>
                 </div>
-                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light" data-aos="fade-up">
+                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light py-5"
+                    data-aos="fade-up">
                     <span class="material-symbols-outlined mt-3 fs-1">
                         group
                     </span>
                     <h5 class="text-center">Supportive Community</h5>
                     <p>Join a supportive community and share experiences in a safe environment.</p>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#featureModal"
+                        data-feature="community">Learn More</button>
                 </div>
-                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light" data-aos="fade-up">
+                <div class="col-lg-3 border border-primary border-2 rounded text-center bg-light py-5"
+                    data-aos="fade-up">
                     <span class="material-symbols-outlined mt-3 fs-1">
                         menu_book
                     </span>
                     <h5 class="text-center">Educational Resources</h5>
                     <p>Access articles, videos and practical guides on a range of mental health topics.</p>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#featureModal"
+                        data-feature="resources">Learn More</button>
+                </div>
+
+                <div class="modal fade my-4 py-5" id="featureModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="img-fluid rounded mb-3" src="" alt="">
+                                <div id="modalDescription"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="modalCTA"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,6 +334,66 @@
                 strings: $this.attr('data-elements').split(','),
                 typeSpeed: 30,
                 backDelay: 500
+            });
+        });
+    </script>
+
+    <script>
+        const modalData = {
+            consultation: {
+                title: "Connect With a Mental Health Expert, Online and On Your Terms",
+                image: "https://via.placeholder.com/800x400?text=Online+Consultation",
+                description: `
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Access licensed therapists from the comfort of your home.</li>
+                    <li class="list-group-item">Flexible scheduling options to fit your life.</li>
+                    <li class="list-group-item">Secure and confidential platform.</li>
+                </ul>
+            `,
+                cta: "Book Your First Session"
+            },
+            community: {
+                title: "Find Support and Connection in Our Caring Community",
+                image: "https://via.placeholder.com/800x400?text=Supportive+Community",
+                description: `
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Share your experiences and connect with others who understand.</li>
+                    <li class="list-group-item">Participate in discussions, ask questions, and get support.</li>
+                    <li class="list-group-item">Access resources and information related to mental well-being.</li>
+                </ul>
+            `,
+                cta: "Create Your Free Account"
+            },
+            resources: {
+                title: "Empower Yourself with Knowledge About Mental Health",
+                image: "https://via.placeholder.com/800x400?text=Educational+Resources",
+                description: `
+                <h6 class="mt-3">Resource Categories:</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Articles</li>
+                    <li class="list-group-item">Videos</li>
+                    <li class="list-group-item">Guides & Workbooks</li>
+                    <li class="list-group-item">Infographics</li>
+                </ul>
+                <p class="mt-3">Featured Content: Meditation Techniques for Beginners</p>
+            `,
+                cta: "View More Resources"
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('featureModal');
+            modal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const feature = button.getAttribute('data-feature');
+                const modalTitle = modal.querySelector('.modal-title');
+                const modalBody = modal.querySelector('.modal-body');
+                const modalCTA = modal.querySelector('#modalCTA');
+
+                modalTitle.textContent = modalData[feature].title;
+                modalBody.querySelector('img').src = modalData[feature].image;
+                modalBody.querySelector('#modalDescription').innerHTML = modalData[feature].description;
+                modalCTA.textContent = modalData[feature].cta;
             });
         });
     </script>
