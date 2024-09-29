@@ -277,7 +277,7 @@ body {
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   body {
-    background-color: green;
+    background-color: palevioletred;
   }
 
   /* Navbar Start */
@@ -315,7 +315,9 @@ body {
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-
+body {
+  background-color: gold;
+}
   /* Navbar Start */
   /* Navbar End */
 
@@ -352,7 +354,9 @@ body {
 /* Footer End */
 
 @media screen and (min-width: 421px) and (max-width: 576px) {
-
+body {
+  background-color: green;
+}
   /* Hero Start */
   .c-hero {
     margin-top: -80px;
@@ -374,7 +378,9 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
-
+body {
+  background-color: purple;
+}
   /* Navbar Start */
   /* Navbar End */
 
