@@ -276,9 +276,6 @@ body {
 /* Footer End */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  body {
-    background-color: palevioletred;
-  }
 
   /* Navbar Start */
   /* Navbar End */
@@ -315,9 +312,7 @@ body {
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-body {
-  background-color: gold;
-}
+
   /* Navbar Start */
   /* Navbar End */
 
@@ -348,15 +343,14 @@ body {
 
   /* FAQ Start */
   /* FAQ End */
-}
+
 
 /* Footer Start */
 /* Footer End */
+}
 
 @media screen and (min-width: 421px) and (max-width: 576px) {
-body {
-  background-color: green;
-}
+
   /* Hero Start */
   .c-hero {
     margin-top: -80px;
@@ -377,24 +371,22 @@ body {
   /* Article End */
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
-body {
-  background-color: purple;
-}
+@media screen and (min-width: 361px) and (max-width: 420px) {
+
   /* Navbar Start */
   /* Navbar End */
 
   /* Hero Start */
   .c-hero {
-    margin-top: -80px;
+    margin-top: -50px;
   }
 
   .header_title {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   .hero-image {
-    width: 280px;
+    width: 310px;
   }
 
   .h4-hero {
@@ -406,24 +398,76 @@ body {
   }
 
   /* Hero End */
-}
 
-/* Article Start */
 
-/* Article End */
+  /* Article Start */
 
-/* Feature Start */
-/* Feature End */
+  /* Article End */
 
-/* Service Start */
-/* Service End */
+  /* Feature Start */
+  /* Feature End */
 
-/* FAQ Start */
-/* FAQ End */
+  /* Service Start */
+  /* Service End */
 
-/* Footer Start */
-.p-footer {
-  font-size: 13px;
-}
+  /* FAQ Start */
+  /* FAQ End */
+
+  /* Footer Start */
+  .p-footer {
+    font-size: 13px;
+  }
 
 /* Footer End */
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+
+  /* Navbar Start */
+  /* Navbar End */
+
+  /* Hero Start */
+  .c-hero {
+    margin-top: 10px;
+  }
+
+  .header_title {
+    font-size: 1.1em;
+  }
+
+  .hero-image {
+    width: 230px;
+  }
+
+  .h4-hero {
+    font-size: 16px;
+  }
+
+  .h3-hero {
+    font-size: 18px;
+  }
+
+  /* Hero End */
+
+
+  /* Article Start */
+
+  /* Article End */
+
+  /* Feature Start */
+  /* Feature End */
+
+  /* Service Start */
+  /* Service End */
+
+  /* FAQ Start */
+  /* FAQ End */
+
+  /* Footer Start */
+  .p-footer {
+    font-size: 13px;
+  }
+
+  /* Footer End */
+
+}
