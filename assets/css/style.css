@@ -1,8 +1,8 @@
 :root {
-  --primary: #0d6efd;
-  --secondary: white;
-  --tree: rgba(225, 225, 225, 0.785);
-  --four: #212529;
+  --primary-color: #6495ED;
+  --secondary-color: #F2F2F2;
+  --dark-color: #336699;
+  --light-color: #99CCFF;
   scroll-behavior: smooth;
 }
 
@@ -13,11 +13,32 @@
 
 body {
   font-family: "Poppins";
+  background-color: var(--dark-color);
 }
 
 /* Navbar Start */
 .navbar {
   z-index: 9999;
+  background-color: var(--light-color);
+}
+
+.navbar-brand {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.nav-item>.nav-link {
+  color: var(--dark-color);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.nav-item>.nav-link:hover {
+  color: var(--secondary-color);
+  background-color: var(--dark-color);
 }
 
 /* Navbar End */
@@ -25,25 +46,30 @@ body {
 /* Hero Start */
 .hero {
   height: 100vh;
+  background-color: var(--primary-color);
 }
 
 .c-hero {
   margin-top: 135px;
 }
 
+.element {
+  color: var(--secondary-color);
+}
+
 
 .button-hero {
-  color: var(--secondary);
-  background-color: var(--four);
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
   padding: 10px;
   text-decoration: none;
-  border-radius: 13px;
+  border-radius: 8px;
   transition: all .5s ease-in-out;
 }
 
 .button-hero:hover {
-  background-color: var(--secondary);
-  color: var(--four);
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
 }
 
 .hero-image {
@@ -54,86 +80,165 @@ body {
 /* Hero End */
 
 /* Article Start */
-.article {
-  
-}
 
 .header-article {
   margin: 0;
+  color: var(--secondary-color);
+}
+
+.header-b-article {
+  background-color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 .card-article {
-  
+  background-color: var(--secondary-color);
 }
 
-.article-image {
-  
+.text-article {
+  color: var(--dark-color);
 }
 
-.h3-article {
-  margin: 0;
+.button-article {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
 }
 
-.p-article {
-  margin: 0;
+.button-article:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
-
 
 /* Article End */
 
 /* Feature Start */
-.modal {
+
+.header-feature {
+  color: var(--secondary-color);
 }
+
+.card-feature {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.button-close {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.button-close:hover {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+
+.button-feature {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.button-feature:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 /* Feature End */
 
 /* Service Start */
-.service {
+
+.header-service {
+  color: var(--secondary-color);
+}
+
+.card-service {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.button-service {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.button-service:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* Service End */
 
 /* FAQ Start */
-.faq {
+
+.header-faq {
+  color: var(--secondary-color);
+}
+
+.accordion-button {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
 /* FAQ End */
 
 /* Footer Start */
+.footer {
+  background-color: var(--light-color);
+  color: var(--dark-color)
+}
+
 .b-footer {
-  color: var(--four);
-  background-color: var(--secondary);
-  border-radius: 10px;
+  color: var(--secondary-color);
+  background-color: var(--dark-color);
+  border-radius: 8px;
   padding: 10px;
   text-decoration: none;
   transition: all .5s ease-in-out;
 }
 
 .b-footer:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .p-footer {
   margin: 0;
-  color: rgb(189, 182, 169);
+  font-size: 16px;
+}
+
+.bi {
+  color: var(--dark-color);
+  font-size: 20px;
 }
 
 /* Footer End */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  body {
-    background-color: #fd0ded;
-  }
 
   /* Navbar Start */
   /* Navbar End */
 
   /* Hero Start */
   .c-hero {
-    margin-top: 20px;
+    margin-top: 100px;
   }
 
   .hero-image {
-    width: 350px;
+    width: 500px;
   }
 
   /* Hero End */
@@ -151,24 +256,25 @@ body {
   /* FAQ End */
 
   /* Footer Start */
+  .p-footer {
+    font-size: 10px;
+  }
+
   /* Footer End */
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  body {
-    background-color: green;
-  }
 
   /* Navbar Start */
   /* Navbar End */
 
   /* Hero Start */
   .c-hero {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 
   .hero-image {
-    width: 340px;
+    width: 400px;
   }
 
   /* Hero End */
@@ -191,9 +297,6 @@ body {
 /* Footer End */
 
 @media screen and (min-width: 421px) and (max-width: 576px) {
-  body {
-    background-color: red;
-  }
 
   /* Hero Start */
   .c-hero {
@@ -207,35 +310,32 @@ body {
   /* Hero End */
 
   /* Article Start */
-  .card-article {}
 
   /* Article End */
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
-  body {
-    background-color: #0dfd79;
-  }
 
   /* Navbar Start */
   /* Navbar End */
 
   /* Hero Start */
-  .header-title {
-    font-size: 10px;
+  .c-hero {
+    margin-top: 40px;
+  }
+
+  .header_title {
+    font-size: 1.4em;
   }
 
   .hero-image {
-    width: 250px;
+    width: 280px;
   }
 
   /* Hero End */
 }
 
 /* Article Start */
-.card-article {
-  
-}
 
 /* Article End */
 
@@ -249,4 +349,8 @@ body {
 /* FAQ End */
 
 /* Footer Start */
+.p-footer {
+  font-size: 13px;
+}
+
 /* Footer End */
