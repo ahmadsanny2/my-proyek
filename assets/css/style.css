@@ -3,6 +3,7 @@
   --secondary-color: #F2F2F2;
   --dark-color: #336699;
   --light-color: #99CCFF;
+  --black-color: black;
   scroll-behavior: smooth;
 }
 
@@ -19,17 +20,21 @@ body {
 /* Navbar Start */
 .navbar {
   z-index: 9999;
-  background-color: var(--light-color);
+  background-color: var(--primary-color);
 }
 
 .navbar-brand {
   font-family: "Poppins";
   font-weight: 700;
-  color: var(--dark-color);
+  color: var(--black-color);
+}
+
+.header-nav {
+  color: var(--secondary-color);
 }
 
 .nav-item>.nav-link {
-  color: var(--dark-color);
+  color: var(--black-color);
   background-color: transparent;
   padding: 10px;
   border-radius: 8px;
@@ -37,8 +42,8 @@ body {
 }
 
 .nav-item>.nav-link:hover {
-  color: var(--secondary-color);
-  background-color: var(--dark-color);
+  color: var(--black-color);
+  background-color: var(--secondary-color);
 }
 
 /* Navbar End */
@@ -46,21 +51,28 @@ body {
 /* Hero Start */
 .hero {
   height: 100vh;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .c-hero {
   margin-top: 135px;
 }
 
-.element {
-  color: var(--secondary-color);
+.h4-hero {
+  color: var(--primary-color);
 }
 
+.element {
+  color: var(--primary-color);
+}
+
+.h3-hero {
+  color: var(--dark-color);
+}
 
 .button-hero {
-  color: var(--dark-color);
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--dark-color);
   padding: 10px;
   text-decoration: none;
   border-radius: 8px;
@@ -68,8 +80,8 @@ body {
 }
 
 .button-hero:hover {
-  background-color: var(--dark-color);
-  color: var(--secondary-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .hero-image {
@@ -80,6 +92,9 @@ body {
 /* Hero End */
 
 /* Article Start */
+.article {
+  padding: 75px 10px;
+}
 
 .header-article {
   margin: 0;
@@ -88,7 +103,6 @@ body {
 
 .header-b-article {
   background-color: var(--dark-color);
-  color: var(--dark-color);
 }
 
 .card-article {
@@ -96,7 +110,7 @@ body {
 }
 
 .text-article {
-  color: var(--dark-color);
+  color: var(--black-color);
 }
 
 .button-article {
@@ -110,25 +124,36 @@ body {
 
 .button-article:hover {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
 /* Article End */
 
 /* Feature Start */
+.feature {
+  padding: 75px 10px;
+  background-color: var(--secondary-color);
+}
 
 .header-feature {
-  color: var(--secondary-color);
+  margin: 0;
 }
 
 .card-feature {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.icon-feature {
+  color: var(--black-color);
+}
+
+.h5-feature {
+  color: var(--black-color);
 }
 
 .button-close {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color:var(--secondary-color) ;
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
@@ -137,10 +162,9 @@ body {
 
 .button-close:hover {
   background-color: var(--dark-color);
-  color: var(--secondary-color);
 }
 
-.button-feature {
+.button-modal-feature {
   background-color: var(--dark-color);
   color: var(--secondary-color);
   text-decoration: none;
@@ -149,22 +173,38 @@ body {
   transition: all .5s ease-in-out;
 }
 
-.button-feature:hover {
+.button-modal-feature:hover {
   background-color: var(--primary-color);
+}
+
+.button-feature {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.button-feature:hover {
+  background-color: var(--dark-color);
   color: var(--secondary-color);
 }
 
 /* Feature End */
 
 /* Service Start */
+.service {
+  padding: 75px 10px;
+}
 
 .header-service {
+  margin: 0;
   color: var(--secondary-color);
 }
 
 .card-service {
   background-color: var(--secondary-color);
-  color: var(--dark-color);
 }
 
 .button-service {
@@ -184,36 +224,43 @@ body {
 /* Service End */
 
 /* FAQ Start */
+.faq {
+  padding: 75px 10px;
+  background-color: var(--secondary-color);
+}
 
 .header-faq {
-  color: var(--secondary-color);
+  margin: 0;
 }
 
 .accordion-button {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
+  background-color: var(--primary-color);
+  color: var(--black-color);
 }
 
 /* FAQ End */
 
 /* Footer Start */
 .footer {
-  background-color: var(--light-color);
-  color: var(--dark-color)
+  background-color: var(--primary-color);
 }
 
-.b-footer {
-  color: var(--secondary-color);
-  background-color: var(--dark-color);
+.button-footer {
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 10px;
   text-decoration: none;
   transition: all .5s ease-in-out;
 }
 
-.b-footer:hover {
-  background-color: var(--primary-color);
+.button-footer:hover {
+  background-color: var(--dark-color);
   color: var(--secondary-color);
+}
+
+.text-footer {
+  font-size: 16px;
 }
 
 .p-footer {
@@ -222,11 +269,12 @@ body {
 }
 
 .bi {
-  color: var(--dark-color);
+  color: var(--secondary-color);
   font-size: 20px;
 }
 
 /* Footer End */
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
   /* Navbar Start */
