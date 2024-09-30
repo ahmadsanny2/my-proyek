@@ -257,6 +257,10 @@ body {
   color: var(--secondary-color);
 }
 
+.h5-footer {
+  color: var(--secondary-color);
+}
+
 .button-footer {
   color: var(--dark-color);
   background-color: var(--secondary-color);
