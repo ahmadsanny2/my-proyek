@@ -251,6 +251,7 @@ body {
 
 .header-footer {
   color: var(--black-color);
+  font-weight: 700;
 }
 
 .span-footer {
