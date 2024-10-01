@@ -470,6 +470,14 @@ body {
     font-size: 18px;
   }
 
+  .p-hero {
+    font-size: small;
+  }
+
+  .button-hero {
+    font-size: 12px;
+  }
+
   /* Hero End */
 
 
@@ -494,3 +502,5 @@ body {
   /* Footer End */
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 340px)
