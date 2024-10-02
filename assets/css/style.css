@@ -110,10 +110,6 @@ body {
   background-color: var(--secondary-color);
 }
 
-.article-image {
-  border: 2px solid var(--dark-color);
-}
-
 .text-article {
   color: var(--black-color);
 }
@@ -391,7 +387,7 @@ body {
 
   /* Footer Start */
   .p-footer {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   /* Footer End */
@@ -432,7 +428,7 @@ body {
 
   /* Footer Start */
   .p-footer {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   /* Footer End */
