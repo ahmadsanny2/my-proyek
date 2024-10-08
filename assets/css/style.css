@@ -14,7 +14,6 @@
 
 body {
   font-family: "Poppins";
-  background-color: var(--dark-color);
 }
 
 /* Navbar Start */
@@ -95,6 +94,7 @@ body {
 /* Article Start */
 .article {
   padding: 75px 10px;
+  background-color: var(--dark-color);
 }
 
 .header-article {
@@ -197,6 +197,7 @@ body {
 /* Service Start */
 .service {
   padding: 75px 10px;
+  background-color: var(--dark-color);
 }
 
 .header-service {
