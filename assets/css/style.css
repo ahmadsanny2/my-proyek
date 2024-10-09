@@ -307,6 +307,11 @@ body {
 
 /* Footer End */
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
   /* Navbar Start */
