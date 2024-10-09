@@ -143,6 +143,9 @@ body {
 .card-feature {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  border-top: 5px solid var(--dark-color);
+  border-bottom: 5px solid var(--dark-color);
+  border-radius: 10px;
 }
 
 .icon-feature {
@@ -208,6 +211,9 @@ body {
 
 .card-service {
   background-color: var(--secondary-color);
+  border-top: 5px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+  border-radius: 10px;
 }
 
 .button-service {
